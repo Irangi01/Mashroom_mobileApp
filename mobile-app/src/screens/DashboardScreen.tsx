@@ -77,7 +77,7 @@ export const DashboardScreen = () => {
       </View>
     );
   }
-
+//start the UI createion
   return (
     <ImageBackground 
       source={require('../assets/mushroom_bg.png')} 

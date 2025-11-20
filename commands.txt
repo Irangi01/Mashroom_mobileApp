@@ -1,0 +1,7 @@
+Mobile App Command
+
+Push-Location "C:\Users\irang\OneDrive\Desktop\Mushroom_Codebase\mobile-app"; npx expo start --clear
+
+ESP read command
+
+python serial_reader.py

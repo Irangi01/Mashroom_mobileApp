@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useTranslation } from 'react-i18next';
 
+// Components
 import SensorCard from '../components/Dashboard/SensorCard';
 import SensorChart from '../components/Dashboard/SensorChart';
 import VideoFeed from '../components/Dashboard/VideoFeed';
@@ -35,7 +36,7 @@ export const DashboardScreen = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Subscribe to sensor data
+    // Subscribe to sensor dataa
     const unsubscribePh = subscribeSensorData('ph', (data) => {
       setPhData(data);
       setLoading(false);

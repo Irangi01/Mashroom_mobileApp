@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useNavigation } from '@react-navigation/native';
-
+//export homescreen
 export const HomeScreen = () => {
   const { t } = useTranslation();
   const theme = useTheme();

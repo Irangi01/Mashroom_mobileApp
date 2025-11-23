@@ -36,7 +36,7 @@ export const MLModelScreen = () => {
       await updateMLModelStatus(newStatus);
     }
   };
-
+//colours for staus chips
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'active': return '#4caf50';
@@ -76,7 +76,7 @@ export const MLModelScreen = () => {
         </Text>
       </View>
 
-      {/* Model Overview */}
+      {/* Model Overview new add */}
       <Surface style={styles.card} elevation={2}>
         <View style={styles.cardHeader}>
           <View>

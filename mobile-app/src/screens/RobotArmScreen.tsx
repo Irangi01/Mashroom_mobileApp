@@ -11,7 +11,7 @@ import {
   moveRobotToPlot, 
   updateRobotStatus
 } from '../services/firebaseService';
-
+//robot arm screen
 export const RobotArmScreen = () => {
   const theme = useTheme();
   const { t } = useTranslation();

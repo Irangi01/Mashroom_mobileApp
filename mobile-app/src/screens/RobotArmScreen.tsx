@@ -98,7 +98,7 @@ export const RobotArmScreen = () => {
       setIsMoving(false);
     }, 2000);
   };
-
+//get status colours
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'idle': return '#4caf50';

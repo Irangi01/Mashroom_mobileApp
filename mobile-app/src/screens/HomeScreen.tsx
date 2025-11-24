@@ -32,7 +32,7 @@ export const HomeScreen = () => {
           Incubation System
         </Text>
         
-        // description card
+        // description card changes 
         <Surface style={styles.descriptionCard} elevation={2}>
           <Text variant="bodyLarge" style={[styles.description, { color: theme.colors.onSurfaceVariant }]}>
             {t('projectDescription')}

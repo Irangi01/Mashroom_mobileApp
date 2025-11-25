@@ -77,7 +77,7 @@ const SensorControlItem: React.FC<SensorControlItemProps> = ({
     </Surface>
   );
 };
-
+//export sensor control screen
 export const SensorControlsScreen = () => {
   const theme = useTheme();
   const { t } = useTranslation();

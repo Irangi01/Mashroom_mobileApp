@@ -46,6 +46,8 @@ export const MLModelScreen = () => {
     }
   };
 
+  //loading state
+
   if (loading) {
     return (
       <View style={[styles.container, styles.centered]}>

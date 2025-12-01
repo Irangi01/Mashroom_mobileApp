@@ -228,7 +228,7 @@ export const MLModelScreen = () => {
     </ScrollView>
   );
 };
-
+//style sheet issue fix
 const styles = StyleSheet.create({
   container: {
     flex: 1,

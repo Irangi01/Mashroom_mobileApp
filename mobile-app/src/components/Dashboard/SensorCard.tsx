@@ -37,7 +37,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
 }) => {
   const theme = useTheme();
   const { t } = useTranslation();
-  // Ensure value is within bounds for progress calculation
+  // Ensure value is within bounds for progress of new calculation
   const clampedValue = Math.min(Math.max(value, minValue), maxValue);
   const progress = ((clampedValue - minValue) / (maxValue - minValue)) * 100;
   

@@ -6,6 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import { WebView } from 'react-native-webview';
 
+// Props for VideoFeed component
 interface VideoFeedProps {
   streamUrl?: string;
   title?: string;

@@ -6,7 +6,7 @@ import LanguageSwitcher from '../components/LanguageSwitcher';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useNavigation } from '@react-navigation/native';
 
-
+// Home Screen Component
 export const HomeScreen = () => {
   const { t } = useTranslation();
   const theme = useTheme();

@@ -15,7 +15,7 @@ interface SensorChartProps {
   maxValue?: number;
 }
 
-
+//
 const SensorChart: React.FC<SensorChartProps> = ({
   title,
   data,

@@ -14,6 +14,7 @@ export const MLModelScreen = () => {
   const [isAutoMode, setIsAutoMode] = useState(true);
   const [loading, setLoading] = useState(true);
 
+  // Fetch ML model info on mount
   useEffect(() => {
     const unsubscribe = subscribeMLModelInfo((data) => {
       if (data) {
@@ -37,7 +38,7 @@ export const MLModelScreen = () => {
     }
   };
   
-//function to get status color
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'active': return '#4caf50';

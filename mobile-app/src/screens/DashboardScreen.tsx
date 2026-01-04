@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useTranslation } from 'react-i18next';
 
-// Components
+
 import SensorCard from '../components/Dashboard/SensorCard';
 import SensorChart from '../components/Dashboard/SensorChart';
 import VideoFeed from '../components/Dashboard/VideoFeed';
@@ -145,6 +145,7 @@ export const DashboardScreen = () => {
             optimalMin={500}
             optimalMax={1000}
           />
+          {/* Progress Bar and Status Badge */ }
           <SensorCard
             title="moisture"
             value={currentValues.moisture}

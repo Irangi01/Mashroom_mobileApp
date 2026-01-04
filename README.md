@@ -218,3 +218,7 @@ graph TD
 | **25** | VSYNC |
 | **26** | SIOD (I2C SDA) |
 | **27** | SIOC (I2C SCL) |
+
+<img width="1200" height="864" alt="Commits" src="https://github.com/user-attachments/assets/62d0610a-29b6-4fd4-b515-22fa7d0700ae" />
+
+

@@ -12,7 +12,6 @@ import {
   updateRobotStatus
 } from '../services/firebaseService';
 
-// Robot Arm Screen Component
 export const RobotArmScreen = () => {
   const theme = useTheme();
   const { t } = useTranslation();
@@ -99,7 +98,7 @@ export const RobotArmScreen = () => {
       setIsMoving(false);
     }, 2000);
   };
-
+//get status colours
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'idle': return '#4caf50';

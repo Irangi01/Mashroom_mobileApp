@@ -36,7 +36,7 @@ export const MLModelScreen = () => {
       await updateMLModelStatus(newStatus);
     }
   };
-
+//colours for staus chips
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'active': return '#4caf50';
@@ -78,7 +78,7 @@ export const MLModelScreen = () => {
         </Text>
       </View>
 
-      {/* Model Overview */}
+      {/* Model Overview new add */}
       <Surface style={styles.card} elevation={2}>
         <View style={styles.cardHeader}>
           <View>
@@ -128,7 +128,7 @@ export const MLModelScreen = () => {
         </View>
       </Surface>
 
-      {/* Predictions */}
+      {/* Predictions view  */}
       <Surface style={styles.card} elevation={2}>
         <Text variant="titleLarge" style={{ fontWeight: '600', marginBottom: 16 }}>
           <MaterialCommunityIcons name="trending-up" size={24} color="#4caf50" /> {t('currentPredictions')}
@@ -230,7 +230,7 @@ export const MLModelScreen = () => {
     </ScrollView>
   );
 };
-
+//style sheet issue fix
 const styles = StyleSheet.create({
   container: {
     flex: 1,

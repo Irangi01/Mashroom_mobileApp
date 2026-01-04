@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useTranslation } from 'react-i18next';
 
+// Components
 import SensorCard from '../components/Dashboard/SensorCard';
 import SensorChart from '../components/Dashboard/SensorChart';
 import VideoFeed from '../components/Dashboard/VideoFeed';
@@ -31,12 +32,12 @@ export const DashboardScreen = () => {
     humidity: 0,
     temperature: 0
   });
-  
+  //fetch camera url
   const [cameraUrl, setCameraUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Subscribe to sensor data
+    // Subscribe to sensor dataa
     const unsubscribePh = subscribeSensorData('ph', (data) => {
       setPhData(data);
       setLoading(false);
@@ -51,7 +52,7 @@ export const DashboardScreen = () => {
       setCurrentValues(data);
     });
     
-    // Subscribe to camera URL
+    // Subscribe to camera url
     const unsubscribeCamera = subscribeCameraUrl((url) => {
       setCameraUrl(url);
     });
@@ -65,7 +66,7 @@ export const DashboardScreen = () => {
       unsubscribeHumidity();
       unsubscribeTemperature();
       unsubscribeCurrent();
-      unsubscribeCamera();
+      unsubscribeCamera(); //unsubscribe camera 
       clearTimeout(timeout);
     };
   }, []);

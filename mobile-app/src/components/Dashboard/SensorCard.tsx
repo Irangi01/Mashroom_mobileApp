@@ -40,13 +40,13 @@ const SensorCard: React.FC<SensorCardProps> = ({
   // Ensure value is within bounds for progress calculation 
   const clampedValue = Math.min(Math.max(value, minValue), maxValue);
   const progress = ((clampedValue - minValue) / (maxValue - minValue)) * 100;
-  
+  // Determine if the current value is within the optimal range
   const isOptimal = optimalMin !== undefined && optimalMax !== undefined
     ? value >= optimalMin && value <= optimalMax
     : true;
 
   const statusColor = isOptimal ? '#4caf50' : '#ff9800';
-
+// Render the sensor card 
   return (
     <Surface style={[styles.card, { backgroundColor: theme.colors.surface }]} elevation={2}>
       <View style={styles.header}>
@@ -80,7 +80,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
             ]} 
           />
         </View>
-        
+      
         {optimalMin !== undefined && optimalMax !== undefined && (
            <View style={styles.statusContainer}>
              <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
@@ -98,7 +98,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
     </Surface>
   );
 };
-
+//style sheet create with new vesion
 const styles = StyleSheet.create({
   card: {
     borderRadius: 12,

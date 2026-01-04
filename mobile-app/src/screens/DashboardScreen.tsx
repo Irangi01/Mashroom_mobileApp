@@ -17,6 +17,7 @@ import { subscribeSensorData, subscribeCurrentSensorValues, subscribeCameraUrl }
 export const DashboardScreen = () => {
   const theme = useTheme();
   const { t } = useTranslation();
+  // ui edite for the changes 
   
   const [phData, setPhData] = useState<SensorData[]>([]);
   const [moistureData, setMoistureData] = useState<SensorData[]>([]);
@@ -31,12 +32,12 @@ export const DashboardScreen = () => {
     humidity: 0,
     temperature: 0
   });
-  
+  //fetch camera url
   const [cameraUrl, setCameraUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Subscribe to sensor data
+    // Subscribe to sensor dataa
     const unsubscribePh = subscribeSensorData('ph', (data) => {
       setPhData(data);
       setLoading(false);
@@ -51,7 +52,7 @@ export const DashboardScreen = () => {
       setCurrentValues(data);
     });
     
-    // Subscribe to camera URL
+    // Subscribe to camera url
     const unsubscribeCamera = subscribeCameraUrl((url) => {
       setCameraUrl(url);
     });
@@ -65,7 +66,7 @@ export const DashboardScreen = () => {
       unsubscribeHumidity();
       unsubscribeTemperature();
       unsubscribeCurrent();
-      unsubscribeCamera();
+      unsubscribeCamera(); //unsubscribe camera 
       clearTimeout(timeout);
     };
   }, []);

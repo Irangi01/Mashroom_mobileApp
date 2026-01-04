@@ -10,7 +10,7 @@ interface VideoFeedProps {
   streamUrl?: string;
   title?: string;
 }
-
+//video feed update 
 const VideoFeed: React.FC<VideoFeedProps> = ({ 
   streamUrl, 
   title = 'liveCameraFeed' 
@@ -26,7 +26,8 @@ const VideoFeed: React.FC<VideoFeedProps> = ({
     setIsLoading(true);
     setError(null);
     
-    // Simulate connection attempt / Reload image
+    // Simulate connection attempt / Reload image 
+    // IN real implementation this would cgeck autual connection status
     setTimeout(() => {
       if (streamUrl) {
         setIsConnected(true);

@@ -15,7 +15,8 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(lang);
     hideDialog();
   };
-
+  
+// Helper function to get language name
   const getLanguageName = (lang: string) => {
     switch(lang) {
       case 'en': return 'English';
@@ -36,6 +37,7 @@ const LanguageSwitcher = () => {
       >
         {getLanguageName(i18n.language)}
       </Button>
+      // dialog for language selection
 
       <Portal>
         <Dialog visible={visible} onDismiss={hideDialog}>

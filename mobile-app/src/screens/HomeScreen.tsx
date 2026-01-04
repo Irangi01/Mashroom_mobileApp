@@ -6,7 +6,6 @@ import LanguageSwitcher from '../components/LanguageSwitcher';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useNavigation } from '@react-navigation/native';
 
-// Home Screen Component
 export const HomeScreen = () => {
   const { t } = useTranslation();
   const theme = useTheme();
@@ -32,7 +31,8 @@ export const HomeScreen = () => {
         <Text variant="headlineSmall" style={[styles.subtitle, { color: theme.colors.secondary }]}>
           Incubation System
         </Text>
-
+        
+        // description card changes 
         <Surface style={styles.descriptionCard} elevation={2}>
           <Text variant="bodyLarge" style={[styles.description, { color: theme.colors.onSurfaceVariant }]}>
             {t('projectDescription')}
@@ -61,16 +61,16 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-end', // Align to the right
     padding: 16,
   },
   languageContainer: {
-    marginTop: 40, // For status bar
+    marginTop: 40, // For status bar 
   },
   content: {
     flex: 1,
     alignItems: 'center',
-    paddingHorizontal: 24,
+    paddingHorizontal: 24, // Side padding
     justifyContent: 'center',
     paddingBottom: 40,
   },

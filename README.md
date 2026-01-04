@@ -218,7 +218,3 @@ graph TD
 | **25** | VSYNC |
 | **26** | SIOD (I2C SDA) |
 | **27** | SIOC (I2C SCL) |
-
-
-**Q: Can I run the mobile app without the hardware?**
-A: Yes. The UI will load, but data fields may be empty or show default values if it cannot connect to the live database backend.

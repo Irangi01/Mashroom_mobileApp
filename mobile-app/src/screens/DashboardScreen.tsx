@@ -32,7 +32,7 @@ export const DashboardScreen = () => {
     humidity: 0,
     temperature: 0
   });
-  
+  //fetch camera url
   const [cameraUrl, setCameraUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -52,7 +52,7 @@ export const DashboardScreen = () => {
       setCurrentValues(data);
     });
     
-    // Subscribe to camera URL
+    // Subscribe to camera url
     const unsubscribeCamera = subscribeCameraUrl((url) => {
       setCameraUrl(url);
     });
@@ -66,7 +66,7 @@ export const DashboardScreen = () => {
       unsubscribeHumidity();
       unsubscribeTemperature();
       unsubscribeCurrent();
-      unsubscribeCamera();
+      unsubscribeCamera(); //unsubscribe camera 
       clearTimeout(timeout);
     };
   }, []);

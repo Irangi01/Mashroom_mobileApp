@@ -36,7 +36,8 @@ export const MLModelScreen = () => {
       await updateMLModelStatus(newStatus);
     }
   };
-//colours for staus chips
+  
+//function to get status color
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'active': return '#4caf50';
@@ -68,6 +69,7 @@ export const MLModelScreen = () => {
       </View>
     );
   }
+  //start the UI creation
 
   return (
     <ScrollView style={[styles.container, { backgroundColor: theme.colors.background }]}>

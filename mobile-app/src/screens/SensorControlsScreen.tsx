@@ -13,7 +13,7 @@ import {
   subscribeLightControl 
 } from '../services/firebaseService';
 import { CurrentSensorValues, LightControl } from '../types';
-//sensor control item update 
+
 interface SensorControlItemProps {
   title: string;
   icon: React.ReactNode;

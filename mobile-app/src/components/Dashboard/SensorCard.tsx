@@ -15,7 +15,7 @@ interface SensorCardProps {
   optimalMin?: number;
   optimalMax?: number;
 }
-
+//map icons to sensor types
 const iconMap: Record<string, string> = {
   temperature: 'thermometer',
   humidity: 'water-percent',

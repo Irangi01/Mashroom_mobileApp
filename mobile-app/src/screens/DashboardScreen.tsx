@@ -17,6 +17,7 @@ import { subscribeSensorData, subscribeCurrentSensorValues, subscribeCameraUrl }
 export const DashboardScreen = () => {
   const theme = useTheme();
   const { t } = useTranslation();
+  // ui edite for the changes 
   
   const [phData, setPhData] = useState<SensorData[]>([]);
   const [moistureData, setMoistureData] = useState<SensorData[]>([]);

@@ -99,7 +99,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
     </Surface>
   );
 };
-
+//style sheet create with new vesion
 const styles = StyleSheet.create({
   card: {
     borderRadius: 12,

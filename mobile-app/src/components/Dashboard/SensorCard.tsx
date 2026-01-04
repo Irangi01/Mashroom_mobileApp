@@ -15,7 +15,7 @@ interface SensorCardProps {
   optimalMin?: number;
   optimalMax?: number;
 }
-//map icons to sensor types
+//map icons to sensor typesgit 
 const iconMap: Record<string, string> = {
   temperature: 'thermometer',
   humidity: 'water-percent',
@@ -37,7 +37,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
 }) => {
   const theme = useTheme();
   const { t } = useTranslation();
-  // Ensure value is within bounds for progress of new calculation
+  // Ensure value is within bounds for progress calculation 
   const clampedValue = Math.min(Math.max(value, minValue), maxValue);
   const progress = ((clampedValue - minValue) / (maxValue - minValue)) * 100;
   // Determine if the current value is within the optimal range

@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   languageContainer: {
-    marginTop: 40, // For status bar
+    marginTop: 40, // For status bar 
   },
   content: {
     flex: 1,

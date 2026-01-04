@@ -37,7 +37,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
 }) => {
   const theme = useTheme();
   const { t } = useTranslation();
-  // Ensure value is within bounds for progress calculation
+  // Ensure value is within bounds for progress of new calculation
   const clampedValue = Math.min(Math.max(value, minValue), maxValue);
   const progress = ((clampedValue - minValue) / (maxValue - minValue)) * 100;
   
@@ -80,7 +80,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
             ]} 
           />
         </View>
-        
+      
         {optimalMin !== undefined && optimalMax !== undefined && (
            <View style={styles.statusContainer}>
              <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
@@ -98,7 +98,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
     </Surface>
   );
 };
-
+//style sheet create with new vesion
 const styles = StyleSheet.create({
   card: {
     borderRadius: 12,

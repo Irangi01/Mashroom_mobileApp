@@ -15,7 +15,7 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(lang);
     hideDialog();
   };
-
+//language update 
   const getLanguageName = (lang: string) => {
     switch(lang) {
       case 'en': return 'English';

@@ -12,6 +12,7 @@ import {
   updateRobotStatus
 } from '../services/firebaseService';
 
+// Robot Arm Screen Component
 export const RobotArmScreen = () => {
   const theme = useTheme();
   const { t } = useTranslation();

@@ -14,6 +14,7 @@ import {
 } from '../services/firebaseService';
 import { CurrentSensorValues, LightControl } from '../types';
 
+
 interface SensorControlItemProps {
   title: string;
   icon: React.ReactNode;

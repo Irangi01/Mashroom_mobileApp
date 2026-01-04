@@ -46,7 +46,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
     : true;
 
   const statusColor = isOptimal ? '#4caf50' : '#ff9800';
-// Render the sensor card 
+
   return (
     <Surface style={[styles.card, { backgroundColor: theme.colors.surface }]} elevation={2}>
       <View style={styles.header}>

@@ -46,7 +46,7 @@ export const MLModelScreen = () => {
     }
   };
 
-  //loading state
+  //loading stategit 
 
   if (loading) {
     return (

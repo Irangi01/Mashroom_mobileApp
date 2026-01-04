@@ -55,6 +55,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
             {t(title)}
           </Text>
           <View style={styles.valueContainer}>
+            
             <Text variant="headlineMedium" style={{ fontWeight: 'bold', color: theme.colors.onSurface }}>
               {value.toFixed(1)}
             </Text>
@@ -67,7 +68,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
           <MaterialCommunityIcons name={iconMap[icon]} size={28} color={color} />
         </View>
       </View>
-
+{/* Progress Bar and Status Badge */ }
       <View style={styles.progressContainer}>
         <View style={[styles.progressBarBackground, { backgroundColor: theme.colors.secondaryContainer }]}>
           <View 
@@ -98,7 +99,7 @@ const SensorCard: React.FC<SensorCardProps> = ({
     </Surface>
   );
 };
-
+{/* Progress Bar and Status Badge */ }
 const styles = StyleSheet.create({
   card: {
     borderRadius: 12,

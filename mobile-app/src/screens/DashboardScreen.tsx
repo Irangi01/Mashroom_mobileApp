@@ -143,6 +143,7 @@ export const DashboardScreen = () => {
             optimalMin={500}
             optimalMax={1000}
           />
+          {/* Progress Bar and Status Badge */ }
           <SensorCard
             title="moisture"
             value={currentValues.moisture}

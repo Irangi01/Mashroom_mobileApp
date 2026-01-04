@@ -95,7 +95,7 @@ export const MLModelScreen = () => {
         <Text variant="bodyMedium" style={{ color: theme.colors.onSurfaceVariant, marginBottom: 16 }}>
           {modelInfo.description}
         </Text>
-
+{/* Progress Bar and Status Badge */ }
         <Text variant="bodyMedium" style={{ color: theme.colors.onSurfaceVariant, marginBottom: 4 }}>
           {t('modelAccuracy')}
         </Text>

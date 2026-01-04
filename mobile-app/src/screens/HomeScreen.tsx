@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-end', // Align to the right
     padding: 16,
   },
   languageContainer: {
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     alignItems: 'center',
-    paddingHorizontal: 24,
+    paddingHorizontal: 24, // Side padding
     justifyContent: 'center',
     paddingBottom: 40,
   },
